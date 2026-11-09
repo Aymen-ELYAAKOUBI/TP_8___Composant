@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TP 8 : Threads &amp; Handlers"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Prêt"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnThreadHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exécuter (Thread + Handler)"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCoroutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exécuter (Coroutines)"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnHeavyTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simuler Calcul Lourd" />
+
+</LinearLayout>
